@@ -157,7 +157,7 @@ function handleTripleClick() {
         
     clearTimeout(resetTimeout);
 
-    if (clickCount === 3) {
+    if (clickCount >= 7) {
         console.log("CAIDA");
 
         cartaPrincipal.classList.add('caida-natural');
@@ -165,7 +165,7 @@ function handleTripleClick() {
     } else {
         resetTimeout = setTimeout(() => {
             clickCount = 0;
-        }, 1000);
+        }, 900);
     }
 }
 

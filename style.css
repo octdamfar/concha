@@ -99,7 +99,11 @@
   .carta {
     width: 350px;  
     height: 520px;
-    }
+  }
+
+  .carta__texto {
+    font-size: 13px;
+  }
 
 }
 
