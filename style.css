@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1; 
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/img/bg.gif');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    transform: scale(1.1);
+    z-index: -10; 
+}
+
+.carta {
+    position: absolute; 
+    width: 420px;  
+    height: 590px; 
+    padding: 36px 40px 40px 88px; 
+    user-select: none;
+}
+
+.ct1 {
+    transform: rotate(5deg);
+    z-index: 6; 
+    cursor: pointer;
+}
+
+.ct2 {
+    transform: rotate(-2deg);
+    z-index: 5; 
+}
+
+.carta__img {
+    position: absolute;
+    inset: 0;         
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: 4;
+}
+
+.carta__title {
+    font-family: "Love";
+    font-size: 17px;
+    color: #000; 
+    text-align: left;
+    width: 100%;
+    position: relative; 
+    z-index: 6;
+}
+
+.carta__texto {
+    font-family: "Simple-Handmade";
+    font-size: 16px;
+    color: #000; 
+    text-align: left;
+    width: 100%;
+    position: relative; 
+    z-index: 6;
+}
+
+.caida-natural {
+    animation: caerLento 1.5s ease-in forwards;
+    pointer-events: none; 
+}
+
+@keyframes caerLento {
+    0% {
+        transform: rotate(5deg) translateY(0) translateX(0);
+    }
+
+    100% {
+        transform: rotate(-10deg) translateY(110vh) translateX(-15px);
+    }
+}

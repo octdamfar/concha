@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Love';
+  src: url('assets/font/love/Love.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Simple-Handmade';
+  src: url('assets/font/simple-handmade/simple-handmade.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Brother-Signature';
+  src: url('assets/font/brother-signature/Brother-Signature.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
