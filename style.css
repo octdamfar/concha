@@ -94,3 +94,12 @@
         transform: rotate(-10deg) translateY(110vh) translateX(-15px);
     }
 }
+
+@media (max-width: 767px) {
+  .carta {
+    width: 350px;  
+    height: 520px;
+    }
+
+}
+
